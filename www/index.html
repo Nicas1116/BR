@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie ie9"> <![endif]-->
+<!--[if IE 10 ]> <html lang="en" class="ie ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+
+<!--<![endif]-->
+<head>
+<meta name="viewport" content="width=640, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="true" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta charset="utf-8">
+<title>Baskin Robbins</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/jquery-ui.theme.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/slick.css" />
+<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+<link href="css/tooltip_skin_variation.css" type="text/css" rel="stylesheet" />
+<link href="css/select2.css" type="text/css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+<link rel="preload" href="fonts/TrebuchetMS-Bold.woff" as="font">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.gsap.js"></script>
+<script type="text/javascript" src="js/select2.full.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/TweenMax.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.sky.carousel-1.0.2.min.js"></script>
+<script type="text/javascript" src="js/jQuery.MultiFile.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+
+</head>
+<body>
+<div style="opacity:0;">
+	<span style="font-family: 'TrebuchetMS';font-weight:normal;">TEST</span>
+	<span style="font-family: 'TrebuchetMS';font-weight:normal;">TEST</span>
+	<span style="font-family: 'NeutraDisp';font-weight:bold;">TEST</span>
+	<span style="font-family: 'NeutraDisp';font-weight:bold;">TEST</span>
+</div>
+<div id="mobileapp">
+	<div id="header" class="segment">
+		<div class="pcontainer">
+			<div class="row">
+				<div class="col four">
+					<div class="baskingrobbinicon"></div>
+					<div class="toppoint_bg">
+						<div class="toppoint_bg_title">Pink Points:</div>
+						<div class="toppoint_bg_pointext"><span class="toppoint_point">8,300</span>pt</div>
+					</div>
+				</div>
+				<div class="col six">
+					<div class="row rightside">
+						<div class="col hbutton"><div class="header_buttonimagenormal" onclick="javascript:openPage('DailyReward');void(0);" ><div class="buttonimage_dailyreward header_buttonimage"></div></div></div>
+						<div class="col hbutton"><div class="header_buttonimagenormal" onclick="javascript:openPage('StoreLocator');void(0);"><div class="buttonimage_storelocator header_buttonimage"></div></div></div>
+						<div class="col hbutton"><div class="header_buttonimagenormal" onclick="javascript:openPage('Profile');void(0);"><div class="buttonimage_profile header_buttonimage"></div></div></div>
+						<div class="col hbutton"><div class="header_buttonimagenormal" onclick="javascript:openNotification();void(0);"><div class="buttonimage_notification header_buttonimage"></div></div></div>
+						
+						<br class="clear"/>
+					</div>
+				</div>
+				<br class="clear"/>
+			</div>
+		</div>
+	</div>
+	<div id="header_navigation" class="segment" style="display:block;">
+		<div class="pcontainer">
+			<div class="row">
+				<div class="col eight">
+					<p class="naviation_text">MY ACCOUNT <img src="images/Text_Navigation.png"/> FEEDBACK TO US</p>
+				</div>
+				<div class="borderright"></div>
+				<div class="col two ">
+					<a class="button_backnavigation"><img src="images/Button_Navigationback.png"/> BACK</a>
+					<select class="inventory_selection">
+						<option value="1">All Active</option>
+						<option value="2">Used</option>
+					</select>
+				</div>
+				<br class="clear"/>
+			</div>
+		</div>
+	</div>	
+	<div id="footer" class="segment">
+		<div class="pcontainer">
+			<div class="row">
+				<div class="col two"><div class="footer_button" onclick="javascript:openPage('Home');void(0);"><div class="buttonimage_home footer_buttonimage"></div><div class="footer_buttontext">HOME</div><div class="footer_buttonline"></div></div></div>
+				<div class="col two"><div class="footer_button" onclick="javascript:openPage('Products');void(0);"><div class="buttonimage_product footer_buttonimage"></div><div class="footer_buttontext">PRODUCTS</div><div class="footer_buttonline"></div></div></div>
+				<div class="col two"><div class="footer_button" onclick="javascript:openPage('Shopping');void(0);"><div class="buttonimage_shopping footer_buttonimage"></div><div class="footer_buttontext">GO SHOPPING</div><div class="footer_buttonline"></div></div></div>
+				<div class="col two"><div class="footer_button" onclick="javascript:openPage('Inventory');void(0);"><div class="buttonimage_inventory footer_buttonimage"></div><div class="footer_buttontext">MY FREEZER</div><div class="footer_buttonline"></div></div></div>
+				<div class="col two"><div class="footer_button" onclick="javascript:openPage('WhatNews');void(0);"><div class="buttonimage_news footer_buttonimage"></div><div class="footer_buttontext">WHAT’S NEW</div></div></div>
+				
+				<br class="clear"/>
+			</div>
+			
+		</div>
+	</div>
+	<div id="contentnotification" style="display:block;">
+		<div class="backgroundnotificationtop"></div>
+		<div class="backgroundnotificationcenter">
+			<div class="notificationcontent"><h1>NOTIFICATION</h1></div>
+			<div class="notificationcontent"><p><img src="images/noti_friend.png"/> Your friend just sent you a gift.<br/><span>10 minutes ago</span></p></div>
+			<div class="notificationcontent"><p>You’ve earned 10 points from daily login.<br/><span>10 minutes ago</span></p></div>
+			<div class="notificationcontent noborder"><p>You’ve purchased a cake.<br/><span>10 minutes ago</span></p></div>
+		</div>
+		<div class="backgroundnotificationbottom"></div>
+	</div>
+	<div id="content" class="segment" style="display:block;">
+		<div class="pcontainer">
+			<div class="page page_feedback" style="display:none;">
+				<div class="CreateAccount_Content">
+					<form class="edit_user">
+						<div class="row">
+							<div class="col three"><label style="line-height:29px;">Feedback<br/>Category</label></div>
+							<div class="col seven"><select name="category">
+								<option value="Customer Service">Customer Service</option>
+								<option value="Customer Service">General Inquiry</option>
+								<option value="Customer Service">Product </option>
+								<option value="Customer Service">Promotion</option>
+								</select>
+							</div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col three"><label>First Name</label></div>
+							<div class="col seven"><input type="text" name="firstname"/></div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col three"><label>Last Name</label></div>
+							<div class="col seven"><input type="text" name="lastname"/></div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col three"><label>Contact No.</label></div>
+							<div class="col seven"><input type="text" name="contactno"/></div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col three"><label>Email</label></div>
+							<div class="col seven"><input type="text" name="email"/></div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col three"><label style="line-height:29px;">Upload<br/>image</label></div>
+							<div class="col seven">  <input id="feedbackfile" name="file" type="file" multiple  accept="gif|jpg|png" class="multi with-preview"/></div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col three"><label>Comments</label></div>
+							<div class="col seven"><textarea name="comments"></textarea></div>
+							<br class="clear"/>
+						</div>
+						<div class="row cbuttoncontainer">
+							<div class="col ten">
+								<button class="pinkborder pinkbg">Submit</button></div>
+							<br class="clear" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="page page_edituser" style="display:none;">
+				<div class="CreateAccount_Content">
+				<form class="edit_user">
+					<h1>MY DETAILS</h1>
+					<div class="row">
+						<div class="col three"><label>First Name</label></div>
+						<div class="col seven"><input type="text" name="firstname"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Last Name</label></div>
+						<div class="col seven"><input type="text" name="lastname"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three">
+							<label>Gender</label>
+						</div>
+						<div class="col seven">
+							<div class="row">
+								<div class="col four">
+									<label class="inputlabel"><input checked="checked" type="radio" name="gender" value="male"/> Male</label> </div>
+								<div class="col four">
+									<label class="inputlabel"><input type="radio" name="gender" value="female"/> Female</label> </div>
+								<br class="clear" />
+							</div>
+						</div>
+						<br class="clear" />
+					</div>
+					<div class="row">
+						<div class="col three"><label>Birthday</label></div>
+						<div class="col seven"><select class="days" name="bday_day"></select>
+<select class="months" name="bday_month"></select>
+<select class="years" name="bday_year"></select><br/><span>*A Birthday Gift will be send during birthday</span></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Email</label></div>
+						<div class="col seven"><input type="text" name="email" disabled="disabled"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Contact No.</label></div>
+						<div class="col seven"><input type="text" name="contactno"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="whiteline"></div>
+					<h1>RESET LOGIN PASSWORD</h1>
+					<div class="row">
+						<div class="col three"><label>Current Password</label></div>
+						<div class="col seven"><input type="password" name="cpwd"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>New Password</label></div>
+						<div class="col seven"><input type="password" name="newpwd"/>
+						<br/><span>*Passwords should be at least eight (8) characters long.</span>
+						</div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label style="line-height:29px;">Confirm New Password</label></div>
+						<div class="col seven"><input type="password" name="newcpwd"/>
+						</div>
+						<br class="clear"/>
+					</div>
+					<div class="row cbuttoncontainer">
+						<div class="col ten">
+							<a href="javascript:editUser();void(0);" class="pinkborder pinkbg">Save</a></div>
+						<br class="clear" />
+					</div>
+				</form>
+				</div>
+			</div>
+			<div class="page page_faq" style="display:none;">
+				<ul class="faq_container">
+					<li class="faq_q">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?<span class="internalcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum indui ornare, efficitur felis ac, iaculis tortor morbi sollitudin ex leo,id eleifend eros. Lorem ipsum dolor sit amet, consectetur elit. <br/><br/>Vestibulum in dui ornar, efficitur felis, iaculis tortor morbi sollicitueex leo, id eleifend eros sit ame consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulumdui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo,eleifend eros. Lorem ipsum dolor sit am, consectetur adipiscing elit. Vestibulum in dui.</span><a class="faq_close"><img src="images/faq_close.png"/></a></li>
+					<li class="faq_q">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit?<span class="internalcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum indui ornare, efficitur felis ac, iaculis tortor morbi sollitudin ex leo,id eleifend eros. Lorem ipsum dolor sit amet, consectetur elit. <br/><br/>Vestibulum in dui ornar, efficitur felis, iaculis tortor morbi sollicitueex leo, id eleifend eros sit ame consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulumdui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo,eleifend eros. Lorem ipsum dolor sit am, consectetur adipiscing elit. Vestibulum in dui.</span><a class="faq_close"><img src="images/faq_close.png"/></a></li>
+					<li class="faq_q">3. Lorem ipsum dolor sit amet, consectetur adipiscing elit?<span class="internalcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum indui ornare, efficitur felis ac, iaculis tortor morbi sollitudin ex leo,id eleifend eros. Lorem ipsum dolor sit amet, consectetur elit. <br/><br/>Vestibulum in dui ornar, efficitur felis, iaculis tortor morbi sollicitueex leo, id eleifend eros sit ame consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulumdui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo,eleifend eros. Lorem ipsum dolor sit am, consectetur adipiscing elit. Vestibulum in dui.</span><a class="faq_close"><img src="images/faq_close.png"/></a></li>
+					<li class="faq_q">4. Lorem ipsum dolor sit amet, consectetur adipiscing elit?<span class="internalcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum indui ornare, efficitur felis ac, iaculis tortor morbi sollitudin ex leo,id eleifend eros. Lorem ipsum dolor sit amet, consectetur elit. <br/><br/>Vestibulum in dui ornar, efficitur felis, iaculis tortor morbi sollicitueex leo, id eleifend eros sit ame consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulumdui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo,eleifend eros. Lorem ipsum dolor sit am, consectetur adipiscing elit. Vestibulum in dui.</span><a class="faq_close"><img src="images/faq_close.png"/></a></li>
+				</ul>
+			</div>
+			<div class="page page_products" style="display:none;">
+				<div class="product_main_container productm" style="display:none;">
+					<a href="javascript:openProductPage('Flavours');void(0);" class="button_productmain"><img src="images/ProductMain1.jpg"/></a>
+					<a href="javascript:openProductPage('Sundaes');void(0);" class="button_productmain"><img src="images/ProductMain2.jpg"/></a>
+					<a href="javascript:openProductPage('Beverages');void(0);" class="button_productmain"><img src="images/ProductMain3.jpg"/></a>
+					<a href="javascript:openProductPage('Cakes');void(0);" class="button_productmain"><img src="images/ProductMain4.jpg"/></a>
+				</div>
+				<div class="product_container">
+					<img class="product_container_topimage" src="images/ProductMain_Top3.jpg"/>
+					<div class="product_content">
+					<h1>Waffle Sundae </h1><a href="javascript:shareProduct()" class="btn_productshare"><img src="images/btn_productshare.png"/></a>
+					<span>Give in to your caramel desires with real coffee blended with Vanilla ice cream and caramel syrup, then topped with whipped cream and caramel praline topping.</span>
+					</div>
+				</div>
+				
+			</div>
+			<div class="page page_mypinkpoints_reward" style="display:block;">	
+				<div class="mypinkpoints_reward_container">
+					<p class="mypinkpoints_reward_title">Pink Point Offer</p>
+					<div class="reward_container">
+						<div class="reward_container_images" style="background-image:url(images/pinkpoint_rewardbig1.jpg)">
+						</div>
+						<div class="reward_container_description">
+							<p class="mypinkpoints_reward_subtitle">Collect 5000 points to get a Free Single Junior Scoop Ice Cream	</p>
+							<p class="mypinkpoints_reward_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean alis diam at ligula blandit, quis lacinia velit ornare. Nunc rutrum, arcur rutrum fermentum rutrum, nunc odio congue arcu, non ultricies arc exget arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis vitae quam nec condimentum. Suspendisse tortor purus, malesuada vestibulum semper non, tincidunt sit amet ipsum.</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="mypinkpoints_reward_buttoncontainer">
+					<div class="row">
+						<div class="col five">
+							<a href="javascript:proceedRedeem();void(0);" class="pinkborder pinkbg">Redeem</a>
+						</div>
+						<div class="col five textalignright">
+							<a href="javascript:backToPinkPoint();void(0);" class="pinkborder pinkbg">Cancel</a>
+						</div>
+						<br class="clear"/>
+					</div>
+				</div>
+			</div>
+			<div class="page page_mypinkpoints" style="display:block;">	
+				<div class="pinkpoint_top">
+					<div class="pointtext">YOU HAVE <span class="yourpoint">8300</span> points</div>
+				</div>
+				<div class="pinkpoint_expiring">
+					<div class="pinkpoint_title">Points Expiring Chart</div>
+					<div class="pinkpoint_expiring_container">
+						<div class="pinkpoint_expiring_items">
+							30 April 2015
+							<span class="expiring_points">-60 pt</span>
+						</div>
+						<div class="pinkpoint_expiring_items">
+							30 April 2015
+							<span class="expiring_points">-60 pt</span>
+						</div>
+						<div class="pinkpoint_expiring_items">
+							30 April 2015
+							<span class="expiring_points">-60 pt</span>
+						</div>
+						<div class="pinkpoint_expiring_items lastn">
+							30 April 2015
+							<span class="expiring_points">-60 pt</span>
+						</div>
+						<br class="clear"/>
+					</div>
+				</div>
+				<div class="pinkpoint_rewards">
+					
+				</div>
+				<div class="pinkpoint_history">
+					<div id="earned_history" class="pinkpoint_history_container">
+						<div class="pinkpoint_history_title">Points History</div>
+						<div class="pinkpoint_history_content">
+							<div class="pinkpoint_history_date">
+								20/05/2015
+							</div>
+							<div class="pinkpoint_history_date_content">
+								<div class="pinkpoint_history_date_time">12:40pm</div>
+								<div class="pinkpoint_history_date_title">Facebook Share</div>
+								<div class="pinkpoint_history_date_points">20 pt</div>
+								<br class="clear"/>
+							</div>
+						</div>
+					</div>
+					<div class="pinkpoint_history_buttons">
+						<a class="pinkpoint_history_more">Older Points History <img src="images/history_right.png"/></a>
+					</div>
+					<div id="redemption_history" class="pinkpoint_history_container">
+						<div class="pinkpoint_history_title">Redemption History</div>
+						<div class="pinkpoint_history_content">
+							<div class="pinkpoint_history_date">
+								20/05/2015
+							</div>
+							<div class="pinkpoint_history_date_content">
+								<div class="pinkpoint_history_date_time">12:40pm</div>
+								<div class="pinkpoint_history_date_title">Facebook Share</div>
+								<div class="pinkpoint_history_date_points">20 pt</div>
+								<br class="clear"/>
+							</div>
+						</div>
+					</div>
+					<div class="pinkpoint_history_buttons">
+						<a class="pinkpoint_history_more">Older Points History <img src="images/history_right.png"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="page page_afterpayment" style="display:block;">
+				<div class="paymentPopout">
+					<p>Your transaction has been processed successfully.<br/>Thank you and have a nice day.</p>
+					<div class="paymentPopoutButton_container">
+						<a class="bluebg blueborder" href="javascript:shareFacebook();void(0);"><img src="images/buttton_facebook.png"/>Share and earn extra 50 points</a>
+						<a class="pinkbg pinkborder" href="javascript:openPage('Inventory');void(0);"><img src="images/button_freezer.png"/>Open My Freezer</a>
+					</div>	
+				</div>
+			</div>
+			<div class="page page_paymentpoint" style="display:block;">
+				<div class="paymentPointTop">
+					<img src="images/point_top.png"/>
+				</div>
+				<div class="paymentPointInfo">
+					<div class="row">
+						<div class="col seven">
+							<div class="row">
+								<div class="col five">
+									<p class="point_title">Pink Points Charges</p>
+								</div>
+								<div class="col five">
+									<p class="point_c"><span class="pointcharge">5300</span> points</p>
+								</div>
+								<br class="clear"/>
+								<div class="col five">
+									<p class="point_title">Reference No.</p>
+								</div>
+								<div class="col five">
+									<p class="point_refno"><span class="pointrefno">T102203853300</span></p>
+								</div>
+								<br class="clear"/>
+							</div>
+						</div>
+						<br class="clear"/>
+					</div>
+				</div>
+				<div class="paymentPointTotalInfo">
+					<div class="pointTable">
+						<div class="row hasbbb">
+							<div class="col six">
+								<p class="point_title">Total Points Charged</p>
+							</div>
+							<div class="col four">
+								<p class="point_c"><span class="pointcharge">5300</span> points</p>
+							</div>
+							<br class="clear"/>
+							<div class="col six">
+								<p class="point_title">Total Points Available</p>
+							</div>
+							<div class="col four">
+								<p class="point_refno"><span class="pointavaiable">5300</span> points</p>
+							</div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col six">
+								<p class="point_title">Balance After Redemption</p>
+							</div>
+							<div class="col four">
+								<p class="point_refno"><span class="pointafter">5300</span> points</p>
+							</div>
+							<br class="clear"/>
+						</div>
+						<div class="pointline"></div>
+					</div>
+				</div>
+				<div class="paymentButtonContainer">
+					<div class="row">
+						<div class="col five">
+							<a href="javascript:proceedPayment();void(0);" class="pinkborder pinkbg">Proceed</a>
+						</div>
+						<div class="col five">
+							<a href="javascript:checkOut();void(0);" class="pinkborder pinkbg">Cancel</a>
+						</div>
+						<br class="clear"/>
+					</div>
+				</div>
+			</div>
+			<div class="page page_payment" style="display:block;">
+				<div class="paymentTop">
+				</div>
+				<div class="paymentInfo">
+					<!--<div class="paymentButton"><a href="javascript:payBy(1);void(0);" class="button_payment"><img src="images/button_redeempoint.png"/></a></div>-->
+					<div class="paymentButton"><a href="javascript:payBy(2);void(0);" class="button_payment"><img src="images/button_creditcard.png"/></a></div>
+					<div class="paymentButton"><a href="javascript:payBy(3);void(0);" class="button_payment"><img src="images/button_maybank2u.png"/></a></div>
+				</div>
+			</div>
+			<div class="page page_paymentpoints" style="display:block;">
+				<div class="paymentTop">
+				</div>
+				<div class="paymentInfo">
+					<div class="paymentButton"><a href="javascript:payBy(1);void(0);" class="button_payment"><img src="images/button_redeempoint.png"/></a></div>
+				</div>
+			</div>
+			<div class="page page_goshoppingpoints" style="display:block;">
+				<div class="row formtopshop">
+					<div class="col serv1"><p class="servesize">Serving Size</p></div>
+					<div class="col serv2"><p>Quantity</p></div>
+					<div class="col serv2"><p>Sub Total</p></div>
+					<br class="clear"/>
+					<div class="bottomline" style="left:54%;"></div>
+					<div class="bottomline" style="left:77%;"></div>
+				</div>
+				<div class="shopcart">
+				<div class="shopdetail">
+					
+				</div>
+				<div class="row formbtmshop">
+					<div class="row">
+						<div class="col five">
+							<p class="pricetnctext"></p>
+						</div>
+						<div class="col five alignright">
+							<span class="grandtotallabel">Grand Total</span><span class="grandtotal">RM 102.00</span>
+						</div>
+						<br class="clear"/>
+					</div>
+				</div>
+				<div class="row formendshop">
+					<div class="shopping_havetop"><img src="images/shopping_havetop.png"/></div>
+					<p class="havepoint_title">Summary of Points Transaction</p>
+					<div class="havepoint_container">
+						<div class="row">
+							<div class="col seven">
+								<p class="havepoint_st">Total Points Charged</p>
+							</div>
+							<div class="col three">
+								<p class="havepoint_pt balancecharged">5000 pt</p>
+							</div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col seven">
+								<p class="havepoint_st">Total Points Available</p>
+							</div>
+							<div class="col three">
+								<p class="havepoint_pt balanceavail">5000 pt</p>
+							</div>
+							<br class="clear"/>
+						</div>
+						<div class="row">
+							<div class="col seven">
+								<p class="havepoint_st">Balance After Redemption</p>
+							</div>
+							<div class="col three">
+								<p class="havepoint_pt balanceafter">5000 pt</p>
+							</div>
+							<br class="clear"/>
+						</div>
+					</div>
+				</div>
+				<div class="bbutton_container">
+					<a href="javascript:checkOutRedeem();void(0);" class="pinkborder pinkbg">Checkout</a>
+				</div>
+				</div>
+			</div>
+			<div class="page page_goshopping" style="display:block;">
+				<div class="row">
+					<div class="col five"><a href="javascript:openShopIceCream();void(0);" class="Shop_ButtonAddIce"><img src="images/Shop_ButtonAddIce.jpg"/></a></div>
+					<div class="col five"><a href="javascript:openShopCake();void(0);" class="Shop_ButtonAddCake"><img src="images/Shop_ButtonAddCake.jpg"/></a></div>
+					<br class="clear"/>
+				</div>
+				<div class="row formtopshop">
+					<div class="col serv1"><p class="servesize">Serving Size</p></div>
+					<div class="col serv2"><p>Quantity</p></div>
+					<div class="col serv2"><p>Sub Total</p></div>
+					<br class="clear"/>
+					<div class="bottomline" style="left:54%;"></div>
+					<div class="bottomline" style="left:77%;"></div>
+				</div>
+				<div class="shopcart">
+				<div class="shopdetail">
+					
+				</div>
+				<div class="row formbtmshop">
+					<div class="row">
+						<div class="col five">
+							<p class="pricetnctext">*All price is inclusive of 6% GST. </p>
+						</div>
+						<div class="col five alignright">
+							<span class="grandtotallabel">Grand Total</span><span class="grandtotal">RM 102.00</span>
+						</div>
+						<br class="clear"/>
+					</div>
+				</div>
+				<div class="row formendshop">
+				</div>
+				<div class="bbutton_container">
+					<a href="javascript:checkOut();void(0);" class="pinkborder pinkbg">Checkout</a>
+				</div>
+				</div>
+				<div class="emptyCart">
+				Your cart is empty now.
+				</div>
+			</div>
+			<div class="page page_myfreezer" style="display:block;">
+				
+				
+			</div>
+			<div class="page page_dailyreward" style="display:block;">
+				<div class="dailyreward_container">
+					<div class="dailyreward_landing">
+						<p class="daily_title">Daily Rewards</p>
+						<p class="daily_desc">More surprises awaiting you everyday!</p>
+						<a href="javascript:openDaily();void(0);" class="daily_button"><span>10,000</span>vouchers available for grab</a>
+						<div class="dailyreward_bottom"><img src="images/dailyreward_bottom.png"/></div>
+					</div>
+					<div class="dailyreward_collected">
+						<img src="images/dailyreward1.png"/>
+						<div class="vouchercode_container">
+							<div class="vouchercode_t">Voucher Code</div>
+							<div class="vouchercode_c">WV891830</div>
+							<br class="clear"/>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+			<div class="page page_storelocator" style="display:block;">
+				<iframe class="storelocatoriframe" src=""></iframe>
+			</div>
+			<div class="page page_profile" style="display:block;">
+				<div class="profileTop">
+					<h1 class="userName">Hi, Jennifer Chan!</h1>
+				</div>
+				<div class="profileInfo">
+					<div class="row">
+						<div class="col eight">
+							<div class="row">
+								<div class="col three">Birthday</div>
+								<div class="col five profile_birthday">August 28, 1988</div>
+								<br class="clear"/>
+							</div>
+							<div class="row">
+								<div class="col three">Contact No.</div>
+								<div class="col five profile_contactno">+6012 885 5566</div>
+								<br class="clear"/>
+							</div>
+							<div class="row">
+								<div class="col three">Email</div>
+								<div class="col five profile_email">jennifer.chan@gmail.com</div>
+								<br class="clear"/>
+							</div>
+						</div>
+						<br class="clear"/>
+						<a href="javascript:openProfilePage('Edit');void(0);" class="Profile_ButtonEdit"><img src="images/Profile_ButtonEdit.png"/></a>
+					</div>
+				
+
+
+
+
+				</div>
+				<div class="profileButtons">
+					<a href="javascript:openProfilePage('MyPinkPoints')"><img src="images/profilelogo_Points.svg"/> My Pink Points</a>
+					<a href="javascript:openProfilePage('Feedback')"><img src="images/profilelogo_Feedback.svg"/> Feedback To Us</a>
+					<a href="javascript:openProfilePage('Faqs')"><img src="images/profilelogo_Faqs.svg"/> FAQs</a>
+					<a><img src="images/profilelogo_Terms.svg"/> Terms Of Use</a>
+					<a href="javascript:logOut();"><img src="images/profilelogo_Logout.svg"/> Logout</a>
+				</div>	
+			</div>
+			<div class="page page_whatnews" style="display:block;">
+				<div class="seg_newsupdate">
+					<h1>News Updates</h1>
+					<div class="newsupdate_c">
+						<div class="newsupdate_clist">
+							<div class="newsupdate_container" onclick="javascript:openNewsPage(0);">
+								<div class="newsupdate_c_dimage"><img src="images/newsfeed1.jpg"/></div>
+								<div class="newsupdate_c_dtext">New ice cream flavour - <br/>Caramel Chocolate Crunch 1</div>
+							</div>
+						</div>
+						<div class="newsupdate_clist">
+							<div class="newsupdate_container" onclick="javascript:openNewsPage(1);">
+								<div class="newsupdate_c_dimage"><img src="images/newsfeed1.jpg"/></div>
+								<div class="newsupdate_c_dtext">New ice cream flavour - <br/>Caramel Chocolate Crunch 2</div>
+							</div>
+						</div>
+						<div class="newsupdate_clist">
+							<div class="newsupdate_container" onclick="javascript:openNewsPage(2);">
+								<div class="newsupdate_c_dimage"><img src="images/newsfeed1.jpg"/></div>
+								<div class="newsupdate_c_dtext">New ice cream flavour - <br/>Caramel Chocolate Crunch 3</div>
+							</div>
+						</div>
+						<br class="clear"/>
+						<div class="newsupdate_clist">
+							<div class="newsupdate_container" onclick="javascript:openNewsPage(3);">
+								<div class="newsupdate_c_dimage"><img src="images/newsfeed1.jpg"/></div>
+								<div class="newsupdate_c_dtext">New ice cream flavour - <br/>Caramel Chocolate Crunch 4</div>
+							</div>
+						</div>
+						<br class="clear"/>
+					</div>
+					<div class="newsupdate_slider">
+					<div class="newsupdate_slider_container">
+						<ul class="newsupdate_c">
+							<li>
+								<div class="newsupdateslider_inpage">
+									<h1>Flavor of the month - Caramel Chocolate Crunch 1<a href="javascript:shareNews()" class="btn_productshare"><img src="images/btn_productshare.png"/></a></h1>
+									<div class="newsupdateslider_c_dimage"><img src="images/newsfeedbig1.jpg"/></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros adipiscing elit vestibulum ti.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicit udin ex leo, id eleifend eros sit ame consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros.</p>
+									<br/><br/>
+								</div>
+							</li>
+							<li>
+								<div class="newsupdateslider_inpage">
+									<h1>Flavor of the month - Caramel Chocolate Crunch 2</h1><a href="javascript:shareNews()" class="btn_productshare"><img src="images/btn_productshare.png"/></a>
+									<div class="newsupdateslider_c_dimage"><img src="images/newsfeedbig1.jpg"/></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros adipiscing elit vestibulum ti.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicit udin ex leo, id eleifend eros sit ame consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros.</p>
+									<br/><br/>
+								</div>
+							</li>
+							<li>
+								<div class="newsupdateslider_inpage">
+									<h1>Flavor of the month - Caramel Chocolate Crunch 3</h1><a href="javascript:shareNews()" class="btn_productshare"><img src="images/btn_productshare.png"/></a>
+									<div class="newsupdateslider_c_dimage"><img src="images/newsfeedbig1.jpg"/></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros adipiscing elit vestibulum ti.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicit udin ex leo, id eleifend eros sit ame consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros.</p>
+									<br/><br/>
+								</div>
+							</li>
+							<li>
+								<div class="newsupdateslider_inpage">
+									<h1>Flavor of the month - Caramel Chocolate Crunch 4</h1><a href="javascript:shareNews()" class="btn_productshare"><img src="images/btn_productshare.png"/></a>
+									<div class="newsupdateslider_c_dimage"><img src="images/newsfeedbig1.jpg"/></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros adipiscing elit vestibulum ti.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicit udin ex leo, id eleifend eros sit ame consectetur.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros.</p>
+									<br/><br/>
+								</div>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content_main" class="segment" style="display:none;">
+		<div class="pcontainer">
+			<div class="page page_main" style="display:block;">
+				<div class="homepage_template homepage_template5">
+					<div class="homepage_template_container">
+						<div class="grid-item row2 col2" onclick="javascript:openMainPage(0);" >
+							<div class="grid_item_in" style="background-image:url(images/Home1.jpg)">
+							</div>
+						</div>
+						<div class="grid-item row1 col1 " onclick="javascript:openMainPage(1);" >
+							<div class="borderblue">
+							<div class="grid_item_in" style="background-image:url(images/Home2.jpg)">
+							</div>
+							</div>
+						</div>
+						<div class="grid-item row1 col1" onclick="javascript:openMainPage(2);" >
+							<div class="borderblued">
+							<div class="grid_item_in" style="background-image:url(images/Home3.jpg)">
+							</div>
+							</div>
+						</div>
+						<br class="clear"/>
+						<div class="grid-item row1 col1" onclick="javascript:openMainPage(3);" >
+							<div class="grid_item_in" style="background-image:url(images/Home4.jpg)"></div>
+						</div>
+						<div class="grid-item row1 col2"  onclick="javascript:openMainPage(4);" >
+							<div class="grid_item_in" style="background-image:url(images/Home5.jpg)"></div>
+						</div>
+						<br class="clear"/>
+					</div>
+				</div>
+				<div class="homepagebig_slider" style="display:none;">
+					<div class="homepagebig_container">
+						<ul class="homepagebig_c">
+							<li><div class="HomeBigImage" style="background-image:url(images/HomeBig1.jpg)"></div><a href="javascript:shareHome(1);void(0);" class="home_share"><img src="images/home_share.png"/></a></li>
+							<li><div class="HomeBigImage" style="background-image:url(images/Home2.jpg)"></div><a href="javascript:shareHome(2);void(0);" class="home_share"><img src="images/home_share.png"/></a></li>
+							<li><div class="HomeBigImage" style="background-image:url(images/HomeBig2.jpg)"></div><a href="javascript:shareHome(3);void(0);" class="home_share"><img src="images/home_share.png"/></a></li>
+							<li><!--<iframe class="iframevideo" src="https://www.youtube.com/embed/2NoERD4zfdc" frameborder="0" allowfullscreen></iframe><a class="home_share"><img src="images/home_share.png"/></a>--></li>
+							<li><div class="HomeBigImage" style="background-image:url(images/Home5.jpg)"></div><a href="javascript:shareHome(5);void(0);" class="home_share"><img src="images/home_share.png"/></a></li>
+							
+						</ul>
+					</div>
+					<a class="home_close"><img src="images/home_close.png"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="blackcontentoverlay" class="blackcontentoverlay"  style="display:none;">
+		<div id="viewcakedetail" class="blackcontentoverlay_content" style="display:none;">
+			<div class="bcontent_top">YOUR CAKE DETAILS
+			<a href="javascript:closeShopCake();void(0);" class="button_close"><img src="images/googleclosebutton.png"//></a>
+			</div>
+			<div class="bcontent_content">
+				
+			</div>
+			
+			<div class="bbutton_container">
+				<a href="" class="btn_edit greyborder greybg">Edit your cake</a>
+			</div>
+		</div>
+		<div id="sendgiftdetail" class="blackcontentoverlay_content" style="display:none;">
+			<div class="inventory_gifttop"><img src="images/inventory_gifttop.png"/></div>
+			<div class="bcontent_top">
+				<div class="row">
+					<div class="col three">
+					<img class="giftproduct_image" src="images/scoop_single.png"/>
+					</div>
+					<div class="col six">
+					<p class="giftproduct_name">Double Junior Scoop</p>
+					<p class="giftproduct_price">RM 13.00</p>
+					</div>
+					<br class="clear"/>
+				</div>
+			<a href="javascript:closeSendGift();void(0);" class="button_close"><img src="images/Map_TopSearchClear.png"//></a>
+			</div>
+			<div class="bcontent_content">
+				
+				<div class="row">
+					<div class="col four">
+					<p class="giftproduct_label">Your friend’s email</p>
+					</div>
+					<div class="col six">
+					<input type="type" name="inputgiftemailreciever" class="inputgiftemailreciever"/>
+					<span class="inputgiftemailreciever_error"></span>
+					</div>
+					<br class="clear"/>
+				</div>
+				<div class="row">
+					<div class="col ten">
+					<p class="giftproduct_labeld">Message</p>
+					<textarea name="inputgiftemailmessage" class="inputgiftemailmessage">
+					</textarea>
+
+					</div>
+					
+					<br class="clear"/>
+				</div>
+			</div>
+			
+			<div class="bbutton_container">
+				<a href="javascript:sendingGift();void(0);" class="btn_send pinkborder pinkbg">Send</a>
+			</div>
+		</div>
+		<div id="chooseicecream" class="blackcontentoverlay_content" style="display:none;">
+			<div class="bcontent_top">CHOOSE YOUR ICE CREAM SIZE
+			<a href="javascript:closeShopCake();void(0);" class="button_close"><img src="images/googleclosebutton.png"//></a>
+			</div>
+			<div class="bcontent_content">
+				
+			</div>
+			<div>
+				<p class="tnctxt">*All price is inclusive of 6% GST. <br/>*Additional charges may apply when you collect in premium outlets.</p>
+			</div>
+			<div class="bbutton_container">
+				<a href="javascript:iceCreamAddToCart();void(0);" class="greyborder greybg">Add to cart</a>
+			</div>
+		</div>
+		<div id="choosecake" class="blackcontentoverlay_fcontent" style="display:none;">
+			<div class="bcontent_top">Choose your ice cream size
+			<a href="javascript:closeShopCake();void(0);" class="button_close"><img src="images/btn_cancelchoosecake.png"//></a>
+			</div>
+			<div class="bcontent_content">
+				<div class="row notop">
+					<div class="col five">
+						<div class="cservesize crow">
+							<div class="crow_text">SERVING SIZE</div>
+							<div class="crow_choose"><a style="display:block;" class="Shop_ChooseItem" href="javascript:openBottomProduct('ServingSize')" > <img src="images/Shop_ChooseItem.png"/></a></div>
+							<br class="clear"/>
+						</div>
+					</div>
+					<div class="col five">
+						<div class="ccakedesign crow">
+							<div class="crow_text">CAKE DESIGN</div>
+							<div class="crow_choose"><a class="Shop_ChooseItem" href="javascript:openBottomProduct('CakeDesign')" ><img src="images/Shop_ChooseItem.png"/>
+							<span></span>
+							</a>
+							
+							</div>
+							<br class="clear"/>
+						</div>
+					</div>
+					<br class="clear"/>
+				</div>
+				<div class="row">
+					<div class="col five">
+						<div class="cicf crow">
+							<div class="crow_text">ICE CREAM FLAVOR</div>
+							<div class="crow_choose"><a class="Shop_ChooseItem" href="javascript:openBottomProduct('IceCreamFlavour')" ><img src="images/Shop_ChooseItem.png"/></a>
+							<p class="icecreamname"></p>
+							</div>
+							<br class="clear"/>
+						</div>
+					</div>
+					<div class="col five">
+						<div class="cmessage crow">
+							<div class="crow_text">MESSAGE</div>
+							<textarea class="cmessageinput"></textarea>
+							<br class="clear"/>
+						</div>
+					</div>
+					<br class="clear"/>
+				</div>
+				<div class="bottomline"></div>
+			</div>
+			<div class="bcontent_contentdetail">
+				<div class="row">
+					<div class="col three">
+					<span class="txtlabel2">Pick Up Outlets</span>
+					</div>
+					<div class="col seven">
+						<select class="shopping_outlets">
+							<option value=''>Select Outlets</option>
+						</select>
+					</div>
+					<br class="clear"/>
+				</div>
+				<br/>
+				<div class="row">
+					<div class="col five">
+					<span class="txtlabel">Pick Up Date</span><input type="text" id="datepicker">
+					</div>
+					<div class="col five">
+						<span class="txtlabel">Pick Up Time</span><br/>
+							<select class="pickup_time">
+								<option value="">Select Time</option>
+								<option value="12pm - 2pm">12pm - 2pm</option>
+								<option value="2pm - 4pm">2pm - 4pm</option>
+								<option value="4pm - 6pm">4pm - 6pm</option>
+								<option value="6pm - 8pm">6pm - 8pm</option>
+								<option value="8pm - 10pm">8pm - 10pm</option>
+							</select>
+					</div>
+					<br class="clear"/>
+				</div>
+			</div>
+			<div class="bcontent_contentdetailtnc">
+				<div class="row">
+					<div class="col five">
+						<p class="pricetnctext">*All price is inclusive of 6% GST. </p>
+					</div>
+					<div class="col five alignright">
+						<span class="grandtotallabel">Grand Total</span><span class="grandtotal">RM 102.00</span>
+					</div>
+					<br class="clear"/>
+				</div>
+			</div>
+			<div class="bbutton_bodertop"></div>
+			<div class="bbutton_container">
+				<a href="javascript:cakeAddToCart();void(0);" class="pinkborder pinkbg">Add to cart</a>
+			</div>
+		</div>
+	</div>
+	<div class="productselection_container">
+		<div id="cakesproduct" class="sky-carousel">
+			
+		</div>
+		<div id="beverageproduct" class="sky-carousel">
+			
+		</div>
+		<div id="flavoursproduct" class="sky-carousel">
+			
+		</div>
+		<div id="sundaesproduct" class="sky-carousel">
+			
+		</div>
+		<div id="sizeproduct" class="sky-carousel">
+			<div class="sky-carousel-wrapper"><ul class="sky-carousel-container">
+				<li><div><img src="images/size_6.png"/></div></li>
+				<li><div><img src="images/size_9.png"/></div></li>
+				<li><div><img src="images/size_special.png"/></div></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div id="contentoverlay" class="contentoverlay"  style="display:none;">
+		<div class="page_container">
+			<div class="page page_loadingbar" style="display:block;">
+				<div class="loadingbar"></div>
+			</div>
+			<div class="page page_loading" style="display:none;">
+				<div class="loadinglogo loadinglogo1"></div>
+				<div class="loadinglogo loadinglogo2"></div>
+				<div class="loadinglogo loadinglogo3"></div>
+				<div class="loadinglogobr"></div>
+				<div class="loadinglogotext loadinglogotext1">More Flavors.</div>
+				<div class="loadinglogotext loadinglogotext2">More Fun.</div>
+				<div class="loadinglogotext loadinglogotext3">Happiness in every sip.</div>
+			</div>
+			<div class="page page_register" style="display:none;">
+				<div class="welcomelogo"></div>
+				<div class="button_container button_container1" style="display:none;"><a href="javascript:openRegisterPage(2);void(0);" class="pinkborder whitebg">Log in</a><a href="javascript:openRegisterPage(3);void(0);" class="whiteborder pinkbg">Register now</a></div>
+				<div class="button_container button_container2" style="display:none;"><p>Login via</p><a href="javascript:facebookLogin();void(0);" class=""><img src="images/loginviabutton1.png"/></a><a href="javascript:openRegisterPage(5);void(0);" class=""><img src="images/loginviabutton2.png"/></a></div>
+				<div class="button_container button_container3" style="display:none;"><p>Register via</p><a href="javascript:facebookLogin();void(0);" class=""><img src="images/loginviabutton1.png"/></a><a href="javascript:openPage('RegisterUser');void(0);" class=""><img src="images/loginviabutton2.png"/></a></div>
+				<div class="button_container button_container4" style="display:none;"><a class="pinkborder pinkbg">Register with email</a><a class="blueborder bluebg">Register with Facebook</a></div>
+				<div class="button_container button_container5" style="display:none;">
+					<form class="login_user">
+					<div class="row">
+						<div class="col three"><label>Login Email</label></div>
+						<div class="col seven"><input type="text" name="email"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Password</label></div>
+						<div class="col seven"><input type="password" name="pwd"/></div>
+						<br class="clear"/>
+					</div>
+					<a href="javascript:loginUser()" class="pinkborder pinkbg">Login</a>
+					<a href="javascript:openRegisterPage(6)" class="buttonforgot">Forgot passsword?</a>
+					</form>
+				</div>
+				<div class="button_container button_container6" style="display:none;">
+					
+					<div class="row">
+						<div class="col ten"><h1>Forgot password?</h1><p>We will email you a link to reset it.</p></div>
+						<br class="clear"/>
+					</div>
+						<form class="forgot_password">
+					<div class="row">
+						<div class="col three"><label>Email</label></div>
+						<div class="col seven"><input type="text" name="email"/></div>
+						<br class="clear"/>
+					</div>
+					<a href="javascript:forgotPassword();void(0);" class="pinkborder pinkbg">Send</a>
+					</form>
+				</div>
+				<div class="button_container button_container7" style="display:none;">
+					
+					<div class="row">
+						<div class="col ten"><h1>Email sent.</h1><p>Please check your email and follow the<br/>instruction to reset your password.</p><img src="images/EmailSent.png"/></div>
+						<br class="clear"/>
+					</div>
+					<a href="javascript:openPage('Register');void(0);" class="pinkborder pinkbg">Done</a>
+				</div>
+				<div class="button_container button_container8" style="display:none;">
+					
+					<div class="row">
+						<div class="col ten"><h1>Cheers!</h1><p>You’re now a member of Baskin Robbins.<br/>Chill your day with an ice cream!
+</p><img src="images/EmailSent.png"/></div>
+						<br class="clear"/>
+					</div>
+					<a href="javascript:openPage('Home');void(0);" class="pinkborder pinkbg">Done</a>
+				</div>
+			</div>
+			<div class="page page_registeruser" style="display:none;">
+				<div class="CreateAccount_Top"><h1>Create Account</h1></div>
+				<div class="CreateAccount_TopNav"><p>Account information</p></div>
+				<div class="CreateAccount_Content">
+				<form class="register_user">
+					<div class="row">
+						<div class="col three"><label>First Name</label></div>
+						<div class="col seven"><input type="text" name="firstname"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Last Name</label></div>
+						<div class="col seven"><input type="text" name="lastname"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three">
+							<label>Gender</label>
+						</div>
+						<div class="col seven">
+							<div class="row">
+								<div class="col four">
+									<label class="inputlabel"><input checked="checked" type="radio" name="gender" value="male"/> Male</label> </div>
+								<div class="col four">
+									<label class="inputlabel"><input type="radio" name="gender" value="female"/> Female</label> </div>
+								<br class="clear" />
+							</div>
+						</div>
+						<br class="clear" />
+					</div>
+					<div class="row">
+						<div class="col three"><label>Birthday</label></div>
+						<div class="col seven"><select class="days" name="bday_day"></select>
+<select class="months" name="bday_month"></select>
+<select class="years" name="bday_year"></select><br/><span>*A Birthday Gift will be send during birthday</span></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Contact No.</label></div>
+						<div class="col seven"><input type="text" name="contactno"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Email</label></div>
+						<div class="col seven"><input type="text" name="email"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Create Password</label></div>
+						<div class="col seven"><input type="password" name="newpwd"/></div>
+						<br class="clear"/>
+					</div>
+					<div class="row">
+						<div class="col three"><label>Confirm Password</label></div>
+						<div class="col seven"><input type="password" name="newcpwd"/>
+						<br/><span>*Passwords should be at least eight (8) characters long.</span>
+						</div>
+						<br class="clear"/>
+					</div>
+					<div class="row ctermcontainer">
+						<div class="col ten"><label class="inputlabel"><input type="checkbox" name="tc"/>I agree with the <a><u>terms and conditions</u></a>.</label></div>
+						<br class="clear"/>
+					</div>
+					<div class="row cbuttoncontainer">
+						<div class="col five">
+							<a href="javascript:registerUser();void(0);" class="pinkborder pinkbg">Confirm</a></div>
+						<div class="col five">
+							<a href="javascript:openPage('Register');void(0);" class="pinkborder pinkbg">Cancel</a></div>
+						<br class="clear" />
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
