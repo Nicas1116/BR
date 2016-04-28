@@ -37,9 +37,21 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="phonegap.js"></script>
+ <script type="text/javascript" src="js/facebookConnectPlugin.js"></script>
 
 </head>
 <body>
+<script>
+var loginFacebook = function () {
+		if (!window.cordova) {
+			var appId = prompt("Enter FB Application ID", "");
+			facebookConnectPlugin.browserInit(appId);
+		}
+		facebookConnectPlugin.login( ["email"], 
+			function (response) { alert(JSON.stringify(response)) },
+			function (response) { alert(JSON.stringify(response)) });
+	}
+</script>
 <div style="opacity:0;">
 	<span style="font-family: 'TrebuchetMS';font-weight:normal;">TEST</span>
 	<span style="font-family: 'TrebuchetMS';font-weight:normal;">TEST</span>
@@ -942,7 +954,7 @@
 				<div class="welcomelogo"></div>
 				<div class="button_container button_container1" style="display:none;"><a href="javascript:openRegisterPage(2);void(0);" class="pinkborder whitebg">Log in</a><a href="javascript:openRegisterPage(3);void(0);" class="whiteborder pinkbg">Register now</a></div>
 				<div class="button_container button_container2" style="display:none;"><p>Login via</p><a href="javascript:facebookLogin();void(0);" class=""><img src="images/loginviabutton1.png"/></a><a href="javascript:openRegisterPage(5);void(0);" class=""><img src="images/loginviabutton2.png"/></a></div>
-				<div class="button_container button_container3" style="display:none;"><p>Register via</p><a href="javascript:facebookLogin();void(0);" class=""><img src="images/loginviabutton1.png"/></a><a href="javascript:openPage('RegisterUser');void(0);" class=""><img src="images/loginviabutton2.png"/></a></div>
+				<div class="button_container button_container3" style="display:none;"><p>Register via</p><a href="javascript:loginFacebook();void(0);" class=""><img src="images/loginviabutton1.png"/></a><a href="javascript:openPage('RegisterUser');void(0);" class=""><img src="images/loginviabutton2.png"/></a></div>
 				<div class="button_container button_container4" style="display:none;"><a class="pinkborder pinkbg">Register with email</a><a class="blueborder bluebg">Register with Facebook</a></div>
 				<div class="button_container button_container5" style="display:none;">
 					<form class="login_user">
