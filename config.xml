@@ -42,7 +42,10 @@
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
-  
+  <gap:plugin name="com.phonegap.plugins.facebookconnect" version="<VERSION>">
+        <param name="APP_ID" value="1638823863039406" />
+        <param name="APP_NAME" value="Baskin Robbins" />
+    </gap:plugin>
   
   <icon src="icon.png" />
   <!--
