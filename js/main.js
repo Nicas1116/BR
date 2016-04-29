@@ -15,6 +15,10 @@ var newsupdateslider
 var mainpageslider;
 var videocontent = "";
 $(document).ready(function() {
+	if (!window.cordova) {
+		var appId = prompt("1638823863039406", "");
+		facebookConnectPlugin.browserInit(appId);
+	}
     window.scrollTo(0, 1);
     /*$("#mobileapp").css("transform-origin" ,"0% 0%");
 	$("#mobileapp").width(638);
@@ -1308,7 +1312,14 @@ if (appCache) {
 }
 
 function facebookLogin() {
-    FB.getLoginStatus(function(response) {
+	if (!window.cordova) {
+		var appId = prompt("1638823863039406", "");
+		facebookConnectPlugin.browserInit(appId);
+	}
+	facebookConnectPlugin.login( ["email"], 
+			function (response) { facebookCallMe() },
+			function (response) { });
+    /*FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
             facebookCallMe()
         } else {
@@ -1318,13 +1329,11 @@ function facebookLogin() {
                 scope: 'email'
             });
         }
-    });
+    });*/
 }
 
 function facebookCallMe() {
-    FB.api('/me', 'get', {
-        fields: "id,name,first_name,last_name,email,gender"
-    }, function(response) {
+	facebookConnectPlugin.api("me?fields=id,name,first_name,last_name,email,gender", [],function(response) {
         $.ajax({
             method: "POST",
             url: baselink+"phps/user_loginfb.php",
@@ -1348,7 +1357,8 @@ function facebookCallMe() {
             }
 
         });
-    });
+    }, function (response) { }
+	)
 }
 
 window.fbAsyncInit = function() {

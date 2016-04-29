@@ -41,17 +41,7 @@
 
 </head>
 <body>
-<script>
-var loginFacebook = function () {
-		if (!window.cordova) {
-			var appId = prompt("1638823863039406", "");
-			facebookConnectPlugin.browserInit(appId);
-		}
-		facebookConnectPlugin.login( ["email"], 
-			function (response) { alert(JSON.stringify(response)) },
-			function (response) { alert(JSON.stringify(response)) });
-	}
-</script>
+
 <div style="opacity:0;">
 	<span style="font-family: 'TrebuchetMS';font-weight:normal;">TEST</span>
 	<span style="font-family: 'TrebuchetMS';font-weight:normal;">TEST</span>
