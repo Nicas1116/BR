@@ -1361,29 +1361,6 @@ function facebookCallMe() {
 	)
 }
 
-window.fbAsyncInit = function() {
-    FB.init({
-        appId      : '1638823863039406',
-        //appId: '989269487834750',
-        xfbml: true,
-        version: 'v2.5'
-    });
-
-};
-
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-        return;
-    }
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "http://connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-
-
 function openDaily(){
 	$(".dailyreward_landing").hide();
 	$(".dailyreward_collected").show();
