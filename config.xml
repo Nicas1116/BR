@@ -90,7 +90,7 @@
   <allow-intent href="geo:*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
-	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission name="android.permission.INTERNET" />
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
