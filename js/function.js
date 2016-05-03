@@ -424,7 +424,7 @@ function shareNews(){
 			});
 		}
 	});*/
-	facebookConnectPlugin.showDialog(({
+	facebookConnectPlugin.showDialog({
 	  method: 'feed',
 	  link: 'http://kraftmob.com/BaskinRobbins/',
 	  name: 'Flavor of the month - Caramel Chocolate Crunch 1',
