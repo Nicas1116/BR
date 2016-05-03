@@ -1077,7 +1077,7 @@ function checkUserSession() {
     }).done(function(msg) {
         closeLoading();
         var obj = JSON.parse(msg);
-        console.log(obj);
+        alert("userCheck");
         if (obj.error_no) {
             openPage("Register");
         } else {
@@ -1086,6 +1086,7 @@ function checkUserSession() {
             currentuserinventory = obj.userinventory;
             localStorage.current_usersession = current_usersession;
 			console.log($(".toppoint_bg_pointext .toppoint_point"));
+			
 			$(".toppoint_bg_pointext .toppoint_point").html(parseFloat(currentuser.user_points).toLocaleString()+" ");
 			if(!issharefb){
 				openPage("Home");
