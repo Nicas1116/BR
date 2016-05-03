@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.13">
-  <name>Baskin Robbins 0.0.13</name>
-=======
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.7">
-  <name>Baskin Robbins 0.0.7</name>
->>>>>>> parent of 3a95b15... TEST CONFIG
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.14">
+  <name>Baskin Robbins 0.0.14</name>
   <description>Baskin Robbins</description>
   <author href="kraftmob.com/" email="nicas1116@gmail.com">Kraftmob Team</author>
   <content src="index.html"/>
