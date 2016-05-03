@@ -1,5 +1,5 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.11">
-  <name>Baskin Robbins 0.0.11</name>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.12">
+  <name>Baskin Robbins 0.0.12</name>
   <description>Baskin Robbins</description>
   <author href="kraftmob.com/" email="nicas1116@gmail.com">Kraftmob Team</author>
   <content src="index.html"/>
@@ -10,7 +10,7 @@
   <preference name="orientation" value="portrait"/>
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="false"/>
-  <preference name="webviewbounce" value="true"/>
+  <preference name="webviewbounce" value="false"/>
   <preference name="prerendered-icon" value="true"/>
   <preference name="stay-in-webview" value="true"/>
   <preference name="ios-statusbarstyle" value="black-translucent"/>
@@ -18,7 +18,7 @@
   <preference name="UIWebViewDecelerationSpeed" value="fast" />
   <preference name="exit-on-suspend" value="false"/>
   <preference name="show-splash-screen-spinner" value="true"/>
-  <preference name="auto-hide-splash-screen" value="true"/>
+  <preference name="auto-hide-splash-screen" value="false"/>
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="14"/>
   <preference name="android-installLocation" value="auto"/>
@@ -42,6 +42,7 @@
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
+  <gap:plugin name="org.apache.cordova.statusbar"/>
   <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.8.0">
         <param name="APP_ID" value="1638823863039406" />
         <param name="APP_NAME" value="Baskin Robbins" />
