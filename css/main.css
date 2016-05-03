@@ -2426,14 +2426,6 @@ label {
     color: #404041;
     font-weight: bold;
 }
-.CreateAccount_Content .select2-container {
-    display:block;
-    position:relative;
-    float:left;
-    width:auto!important;
-    margin: -20px 10px 0 0px;
-}
-.CreateAccount_Content .select2-container--default .select2-selection--single{padding-right:50px;}
 .CreateAccount_Content span {
     margin-top: 10px;
     display: inline-block;
