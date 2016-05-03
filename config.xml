@@ -1,5 +1,5 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.9">
-  <name>Baskin Robbins 0.0.9</name>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.10">
+  <name>Baskin Robbins 0.0.10</name>
   <description>Baskin Robbins</description>
   <author href="kraftmob.com/" email="nicas1116@gmail.com">Kraftmob Team</author>
   <content src="index.html"/>
@@ -12,7 +12,7 @@
   <preference name="fullscreen" value="false"/>
   <preference name="webviewbounce" value="true"/>
   <preference name="prerendered-icon" value="true"/>
-  <preference name="stay-in-webview" value="false"/>
+  <preference name="stay-in-webview" value="true"/>
   <preference name="ios-statusbarstyle" value="black-translucent"/>
   <preference name="detect-data-types" value="true"/>
   <preference name="UIWebViewDecelerationSpeed" value="fast" />
