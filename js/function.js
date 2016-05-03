@@ -475,7 +475,8 @@ function shareProduct(){
 			productimagepath = "images/products/sundaes/";
             break;
 	}
-	FB.ui({
+	
+	/*FB.ui({
 	  method: 'feed',
 	  link: 'http://kraftmob.com/BaskinRobbins/',
 	  name: currrentProduct.title,
@@ -501,7 +502,35 @@ function shareProduct(){
 				}
 			});
 		}
-	});
+	});*/
+	facebookConnectPlugin.showDialog({
+	  method: 'feed',
+	  link: 'http://kraftmob.com/BaskinRobbins/',
+	  name: currrentProduct.title,
+	  caption: "Baskin Robbins",
+	  picture: 'http://kraftmob.com/BaskinRobbins/'+productimagepath+currrentProduct.productimg,
+	  description : currrentProduct.description
+	},  function(response){
+		if(response.post_id){
+			$.ajax({
+				method: "POST",
+				url: baselink+"phps/user_addsharereward.php",
+				data: {
+					user_session: current_usersession
+				}
+			}).done(function(msg) {
+				var obj = JSON.parse(msg);
+				shopRedeemCart = [];
+				if (obj.error_no) {
+					openPage("Register");
+				} else {
+					issharefb=true;
+					checkUserSession();
+				}
+			});
+		}
+	}, function(){
+	})
 }
 /*REDEEM REWARD*/
 var currentRewardSelect=-1;
