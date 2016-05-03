@@ -1077,7 +1077,6 @@ function checkUserSession() {
     }).done(function(msg) {
         closeLoading();
         var obj = JSON.parse(msg);
-        alert("userCheck");
         if (obj.error_no) {
             openPage("Register");
         } else {
