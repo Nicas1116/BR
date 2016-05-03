@@ -397,7 +397,7 @@ function buildProductCake(){
 
 /*SHARING*/
 function shareNews(){
-	FB.ui({
+	/*FB.ui({
 	  method: 'feed',
 	  link: 'http://kraftmob.com/BaskinRobbins/',
 	  name: 'Flavor of the month - Caramel Chocolate Crunch 1',
@@ -423,11 +423,39 @@ function shareNews(){
 				}
 			});
 		}
+	});*/
+	facebookConnectPlugin.showDialog(({
+	  method: 'feed',
+	  link: 'http://kraftmob.com/BaskinRobbins/',
+	  name: 'Flavor of the month - Caramel Chocolate Crunch 1',
+	  caption: "Baskin Robbins",
+	  picture: 'http://kraftmob.com/BaskinRobbins/images/newsfeed1.jpg',
+	  description :'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros adipiscing elit vestibulum ti.'
+	}, function(response){
+		if(response.post_id){
+			$.ajax({
+				method: "POST",
+				url: baselink+"phps/user_addsharereward.php",
+				data: {
+					user_session: current_usersession
+				}
+			}).done(function(msg) {
+				var obj = JSON.parse(msg);
+				shopRedeemCart = [];
+				if (obj.error_no) {
+					openPage("Register");
+				} else {
+					issharefb=true;
+					checkUserSession();
+				}
+			});
+		}
+	},function(){
 	});
 }
 
 function shareHome(pNo){
-	FB.ui({
+	/*FB.ui({
 	  method: 'feed',
 	  link: 'http://kraftmob.com/BaskinRobbins/',
 	  name: 'Baskin Robbins',
@@ -453,7 +481,36 @@ function shareHome(pNo){
 				}
 			});
 		}
-	});
+	});*/
+	facebookConnectPlugin.showDialog({
+	  method: 'feed',
+	  link: 'http://kraftmob.com/BaskinRobbins/',
+	  name: 'Baskin Robbins',
+	  caption: "Baskin Robbins",
+	  picture: 'http://kraftmob.com/BaskinRobbins/images/Home'+pNo+'.jpg',
+	  description :'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui ornare, efficitur felis ac, iaculis tortor morbi sollicitudin ex leo, id eleifend eros adipiscing elit vestibulum ti.'
+	}, function(response){
+		if(response.post_id){
+			$.ajax({
+				method: "POST",
+				url: "phps/user_addsharereward.php",
+				data: {
+					user_session: current_usersession
+				}
+			}).done(function(msg) {
+				var obj = JSON.parse(msg);
+				shopRedeemCart = [];
+				if (obj.error_no) {
+					openPage("Register");
+				} else {
+					issharefb=true;
+					checkUserSession();
+				}
+			});
+		}
+	},function(){
+		
+	})
 }
 function shareProduct(){
 	var currrentProduct;
