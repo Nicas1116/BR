@@ -38,7 +38,8 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="phonegap.js"></script>
  <script type="text/javascript" src="js/facebookConnectPlugin.js"></script>
-
+<link type="text/css" rel="stylesheet" href="css/googlemap.css" />
+<script type="text/javascript" src="js/google_mapbr.js"></script>
 </head>
 <body>
 
@@ -577,7 +578,27 @@
 				</div>
 			</div>
 			<div class="page page_storelocator" style="display:block;">
-				<iframe class="storelocatoriframe" src=""></iframe>
+				<div id="map">
+</div>
+<div id="searchtop">
+	<div class="searchbox"><input class="searchtxt" type="text" placeholder="Search" />
+	<img class="Map_TopSearch" src="images/Map_TopSearch.png"/>
+	<a class="Map_TopSearchClear" style="display:none;"><img src="images/Map_TopSearchClear.png"/></a>
+	</div>
+	<div class="searchbox"><select class="stateselector">
+		<option value="">Select State</option>
+	</select></div>
+	<br class="clear"/>
+</div>
+<div id="searchresult">
+	<div class="topcontent"></div>
+	<div class="searTex">Search Result</div>
+	<div class="searchresultobx"></div>
+	<div class="btmcontent"></div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk04vP-No5pgfBw8UQmt7B-AxHfQBVzsc&callback=init"
+async defer></script>
 			</div>
 			<div class="page page_profile" style="display:block;">
 				<div class="profileTop">
