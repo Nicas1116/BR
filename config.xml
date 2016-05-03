@@ -1,5 +1,5 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.12">
-  <name>Baskin Robbins 0.0.12</name>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.baskinrobbins.mobileapp" version="0.0.13">
+  <name>Baskin Robbins 0.0.13</name>
   <description>Baskin Robbins</description>
   <author href="kraftmob.com/" email="nicas1116@gmail.com">Kraftmob Team</author>
   <content src="index.html"/>
